@@ -1,0 +1,32 @@
+class Person
+  protected
+  def print_person
+    print "Person"
+  end
+
+  private
+  def print_person1
+    print "Person1"
+  end
+end
+
+
+class Student < Person
+  def print_student(test)
+    # puts "Student"
+    # test.print_person
+    # test.print_person1
+    #
+    print_person
+    # test.print_person1
+
+
+
+
+  end
+end
+p1=Person.new
+s1=Student.new
+s1.print_student(p1)
+
+
